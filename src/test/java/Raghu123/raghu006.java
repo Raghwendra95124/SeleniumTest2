@@ -22,6 +22,11 @@ public class raghu006 {
         password.sendKeys("Raghu@123");
         WebElement loginsubmit = driver.findElement(By.xpath("//button[text()='Login']\n"));
         loginsubmit.click();
+        WebElement otpinput = driver.findElement(By.xpath("//input[@name='otp[]']\n"));
+        otpinput.sendKeys("2000");
+        WebElement submit2 = driver.findElement(By.xpath("//button[@class='btn btn-primary btn-block']\n"));
+        submit2.click();
+        driver.quit();
 
     }
 }
